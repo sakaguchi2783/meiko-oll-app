@@ -396,7 +396,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
           value={newDetail.detail_type}
           onChange={handleChange}
         >
-          <option value="表紙">指定無し</option>
+          <option value="指定無し">指定無し</option>
           <option value="表紙">表紙</option>
           <option value="本文">本文</option>
           <option value="表紙＋本文">表紙＋本文（同じ用紙）</option>
@@ -419,7 +419,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
 
         <label>数量</label>
         <input
-          type="number"
+          type="text"
           name="quantity"
           value={newDetail.quantity}
           onChange={handleChange}
@@ -427,7 +427,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
 
 <label>ページ数 ※12P等の場合は16Pで算出するか用紙価格で調整</label>
 <input
-  type="number"
+  type="text"
   name="pages"
   value={newDetail.pages}
   onChange={handleChange}
@@ -477,7 +477,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
           <>
             <label>外注費</label>
             <input
-              type="number"
+              type="text"
               name="design_outsource_cost"
               value={newDetail.design_outsource_cost}
               onChange={handleChange}
@@ -485,7 +485,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
 
             <label>利益率</label>
             <input
-              type="number"
+              type="text"
               step="0.1"
               name="design_profit_rate"
               value={newDetail.design_profit_rate}
@@ -496,7 +496,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
           <>
             <label>社内単価(円/ページ)</label>
             <input
-              type="number"
+              type="text"
               name="design_inhouse_unit_cost"
               value={newDetail.design_inhouse_unit_cost}
               onChange={handleChange}
@@ -520,7 +520,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
           <>
             <label>外注印刷仕入</label>
             <input
-              type="number"
+              type="text"
               name="print_outsource_cost"
               value={newDetail.print_outsource_cost}
               onChange={handleChange}
@@ -528,7 +528,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
 
             <label>利益率</label>
             <input
-              type="number"
+              type="text"
               step="0.1"
               name="print_profit_rate"
               value={newDetail.print_profit_rate}
@@ -560,7 +560,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
 
             <label>用紙厚み(K)</label>
             <input
-              type="number"
+              type="text"
               name="paper_thickness"
               value={newDetail.paper_thickness}
               onChange={handleChange}
@@ -568,7 +568,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
 
             <label>用紙単価</label>
             <input
-              type="number"
+              type="text"
               name="paper_unit_price"
               value={newDetail.paper_unit_price}
               onChange={handleChange}
@@ -576,7 +576,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
 
             <label>製版単価(円)</label>
             <input
-              type="number"
+              type="text"
               name="plate_unit_cost"
               value={newDetail.plate_unit_cost}
               onChange={handleChange}
@@ -584,7 +584,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
 
             <label>印刷単価(円)</label>
             <input
-              type="number"
+              type="text"
               name="print_unit_cost"
               value={newDetail.print_unit_cost}
               onChange={handleChange}
@@ -593,7 +593,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
 
             <label>製本代</label>
             <input
-              type="number"
+              type="text"
               name="binding_cost"
               value={newDetail.binding_cost}
               onChange={handleChange}
@@ -601,7 +601,7 @@ export default function EstimateForm({ estimateId, onDetailsLoaded }) {
 
             <label>発送費</label>
             <input
-              type="number"
+              type="text"
               name="shipping_cost"
               value={newDetail.shipping_cost}
               onChange={handleChange}
